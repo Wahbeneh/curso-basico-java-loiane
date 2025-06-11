@@ -1,5 +1,4 @@
 package com.wahbene.cursobasicojava.exerciciosaula13;
-
 import java.util.Scanner;
 
 /**

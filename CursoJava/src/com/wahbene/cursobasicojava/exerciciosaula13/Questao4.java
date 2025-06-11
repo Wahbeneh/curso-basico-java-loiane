@@ -1,6 +1,4 @@
 package com.wahbene.cursobasicojava.exerciciosaula13;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
