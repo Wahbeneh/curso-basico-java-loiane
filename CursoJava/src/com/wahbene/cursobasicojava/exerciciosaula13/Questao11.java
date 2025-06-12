@@ -22,7 +22,7 @@ public class Questao11 {
         n2 = ler.nextInt();
 
         System.out.print("Digite o valor do número real: ");
-        n3 = ler.nextInt();
+        n3 = ler.nextDouble();
 
         double a = (n1*2) * ((double) n2 /2);
         double b = (n1*3) + n3;

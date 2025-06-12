@@ -28,9 +28,9 @@ public class Questao15 {
         h_trabalhadas = ler.nextInt();
 
         t_salario = v_hora * h_trabalhadas;
-        imposto_renda = t_salario - (t_salario * 0.11);
-        inss = t_salario - (t_salario * 0.08);
-        sindicato = t_salario - (t_salario * 0.05);
+        imposto_renda = t_salario * 0.11;
+        inss = t_salario * 0.08;
+        sindicato = t_salario * 0.05;
 
         l_salario = t_salario - (imposto_renda + inss + sindicato);
 
