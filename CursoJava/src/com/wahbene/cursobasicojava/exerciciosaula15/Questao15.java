@@ -17,10 +17,21 @@ public class Questao15 {
         lado3 = ler.nextInt();
 
         if (lado2 + lado3 > lado1 && lado1 + lado3 > lado2 && lado1 + lado2 > lado3) {
-            System.out.print("É possível formar um triângulo");
+
+            System.out.print("É possível formar um triângulo\n");
+
+            if (lado1 == lado2 && lado2 == lado3 && lado1 == lado3) {
+                System.out.print("Esse triângulo é equilátero");
+            } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+                System.out.print("Esse triângulo é isósceles");
+            } else {
+                System.out.println("Esse triângulo é escaleno");
+            }
+
         } else {
             System.out.print("Não é possível formar um triângulo");
         }
+
 
     }
 }
