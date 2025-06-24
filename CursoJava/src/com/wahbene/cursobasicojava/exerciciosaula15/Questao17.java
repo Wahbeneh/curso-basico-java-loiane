@@ -10,17 +10,10 @@ public class Questao17 {
         System.out.print("Digite um ano: ");
         ano = ler.nextInt();
 
-        if(ano % 100 == 0){
-            if(ano % 400 == 0){
-                System.out.print("Este ano é bissexto");
-            }
-        } else if(ano % 4 == 0){
-            if(ano % 100 != 0){
-            System.out.print("Este ano é bissexto");
-            }
+        if (ano % 4 == 0 && (ano % 100 != 0) || (ano % 400 == 0)){
+            System.out.print("Esse ano é bissexto");
         } else {
-            System.out.print("Este ano não é bissexto");
+            System.out.print("Esse ano não é bissexto");
         }
-
     }
 }
