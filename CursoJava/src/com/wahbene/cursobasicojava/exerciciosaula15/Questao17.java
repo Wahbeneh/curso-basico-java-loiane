@@ -10,12 +10,15 @@ public class Questao17 {
         System.out.print("Digite um ano: ");
         ano = ler.nextInt();
 
-        //Se ele for divisível por 4, porem se for divisível por 100  precisa ser divisível por 400
-        if(ano % 4 == 0 && ano % 400 == 0) {
+        if(ano % 100 == 0){
+            if(ano % 400 == 0){
+                System.out.print("Este ano é bissexto");
+            }
+        } else if(ano % 4 == 0){
+            if(ano % 100 != 0){
             System.out.print("Este ano é bissexto");
-        }
-
-        else {
+            }
+        } else {
             System.out.print("Este ano não é bissexto");
         }
 
