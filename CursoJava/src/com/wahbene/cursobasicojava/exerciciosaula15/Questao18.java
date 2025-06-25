@@ -35,6 +35,9 @@ public class Questao18 {
             valido_a = false;
         }
 
+        if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 31) {
+            valido_d = false;
+        }
 
         if (valido_d && valido_m && valido_a) {
             System.out.print("Essa data é válida");
