@@ -148,7 +148,7 @@ public class Questao28 {
                         "Forma de Pagamento: Dinheiro ou Cartão");
 
             } else {
-                System.out.print("Opção Inválida");
+                System.out.print("Opção Inválida - Tente Novamente");
             }
         }
 
