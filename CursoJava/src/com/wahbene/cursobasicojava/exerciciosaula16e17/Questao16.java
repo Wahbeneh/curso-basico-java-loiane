@@ -12,7 +12,7 @@ public class Questao16 {
             aux = a;
             a = a + b;
             b = aux;
-        } while (a <= 500);
+        } while (a <=500);
 
     }
 }
