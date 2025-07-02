@@ -19,7 +19,6 @@ public class Questao19 {
                 n = ler.nextInt();
             }
 
-            soma += n;
             if (n > maior) {
                 maior = n;
             }
