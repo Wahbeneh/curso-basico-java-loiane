@@ -6,6 +6,7 @@ public class Questao10 {
         int[] b = new int[10];
 
         for (int i = 0; i < a.length; i++) {
+            a[i] = i + 1;
             b[i] = a[i] % 2;
         }
 
