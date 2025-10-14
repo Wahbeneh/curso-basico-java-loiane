@@ -4,47 +4,41 @@ import java.util.Random;
 
 public class Questao40 {
     public static void main(String[] args) {
-
-        int[] a = new int[10];
-        int[] b = new int[10];
-        int[] c = new int[10];
-        Random random = new Random(123);
+        int[] a = new int[]{1,2,5,4};
+        int[] b = new int[]{1,2,2,2};
+        int[] c = new int[3];
+        Random random = new Random(92426750);
+        boolean encontradoemB = false, encontradoemC = false;
         int cont = 0;
-        boolean possui1 = false, possui2 = false;
+
+
 
         for (int i = 0; i < a.length; i++) {
-            a[i] = random.nextInt(11);
-            b[i] = random.nextInt(11);
-        }
-
-        for (int i = 0; i < a.length; i++) {
+            encontradoemB = false;
+            encontradoemC = false;
             for (int j = 0; j < b.length; j++) {
                 if (a[i] == b[j]) {
-                    possui1 = true;
+                    encontradoemB = true;
                     break;
                 }
             }
 
-            if (!possui1) {
-                if (cont == 0) {
+            if (!encontradoemB) {
+                for (int k = 0; k < cont; k++) {
+                    if (a[i] == c[k]) {
+                        encontradoemC = true;
+                    }
+                }
+
+                if (!encontradoemC) {
                     c[cont] = a[i];
                     cont++;
-                    break;
-                } else {
-                    for (int k = 0; k < cont; k++) {
-                        if (c[cont] == a[i]) {
-                            possui2 = true;
-                        }
-                    }
-                    if (!possui2) {
-                        c[cont] = a[i];
-                        cont++;
-                    }
-
                 }
             }
+        }
 
+        for (int i = 0; i < cont; i++) {
+            System.out.println(c[i]);
         }
     }
 }
-
