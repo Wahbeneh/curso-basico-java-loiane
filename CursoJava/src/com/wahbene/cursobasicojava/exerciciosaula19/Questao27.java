@@ -22,7 +22,7 @@ public class Questao27 {
             } else if (a[i] > 10) {
                 b[i] = 'e';
             }
-
+            System.out.println(b[i]);
         }
     }
 }
