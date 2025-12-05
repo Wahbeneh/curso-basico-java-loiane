@@ -13,7 +13,10 @@ public class Questao2 {
             for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = rd.nextInt(11);
 
-
+                if (i == 4 && j == 0) {
+                    maiorlinha5 = matriz[i][j];
+                    menorlinha5 = matriz[i][j];
+                }
 
                 if (i == 4) {
 
@@ -26,11 +29,16 @@ public class Questao2 {
                     }
                 }
 
+                if ( i == 0 && j == 0) {
+                    maiorlinha7 = matriz[i][j];
+                }
 
                 if (j == 6) {
+
                     if (matriz[i][j] > maiorlinha7) {
                         maiorlinha7 = matriz[i][j];
                     }
+
                     if (matriz[i][j] < menorlinha7) {
                         menorlinha7 = matriz[i][j];
                     }
@@ -39,8 +47,8 @@ public class Questao2 {
         }
 
         System.out.println("Maior número da linha 5: " + maiorlinha5);
-        System.out.println("Menor número da linha 5: " + maiorlinha5);
-        System.out.println("Maior número da coluna 7: " + maiorlinha5);
-        System.out.print("Menor número da coluna 7: " + maiorlinha5);
+        System.out.println("Menor número da linha 5: " + menorlinha5);
+        System.out.println("Maior número da coluna 7: " + maiorlinha7);
+        System.out.print("Menor número da coluna 7: " + menorlinha7);
     }
 }
