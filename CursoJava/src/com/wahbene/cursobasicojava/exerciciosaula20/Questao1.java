@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Questao1 {
     public static void main(String[] args) {
-        Random rd = new Random(123);
+        Random rd = new Random();
         int maior = 0;
         int[][] numeros = new int[4][4];
 
